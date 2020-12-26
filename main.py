@@ -35,7 +35,7 @@ def getNormalForm(word):
     return morph.parse(word)[0].normal_form
 
 
-print(getNormalForm('шашки'))
+# print(getNormalForm('шашки'))
 
 one = (1, 2, 3)
 two = (4, 5, 6)
@@ -104,5 +104,7 @@ def getAnswer(question):
     return answers[tags]
 
 
-answer = getAnswer('сколько человек в баскетболе?')
-print(answer)
+while (True):
+    question = input()
+    answer = getAnswer(question)
+    print(answer)
